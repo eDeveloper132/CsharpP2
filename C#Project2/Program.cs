@@ -108,7 +108,7 @@ namespace C_Project2
             if (SuppliCount == 0)
                 for(int i = 0; i <= 3 ; i++)
                 {
-                    if (obtained[i] <= 33)
+                    if (obtained[i] < 33)
                     {
                         ++SuppliCount;
                     }
@@ -118,7 +118,7 @@ namespace C_Project2
                 Console.WriteLine("Value Not Found");
             }
             Console.WriteLine($"****************************Your Suppli Count is : \u001b[1m {SuppliCount} \u001b[0m *******************************");
-
+            Console.ReadLine();
             //if (obtained[0] <= 25 && obtained[0] >= 0)
             //{
             //        ++SuppliCount;
@@ -143,7 +143,6 @@ namespace C_Project2
             //{
             //    Console.WriteLine("Value Not Found");
             //}
-            Console.ReadLine();
             //int[,] matrixarray = new int[3, 4]
             //{
             //        {12, 14, 15, 16},
